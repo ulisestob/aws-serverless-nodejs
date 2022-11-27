@@ -1,0 +1,17 @@
+{
+  "name": "aws-serverless-nodejs",
+  "version": "1.0.0",
+  "description": "Example of aws-serverless-nodejs",
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "deploy": "serverless deploy"
+  },
+  "devDependencies": {
+    "aws-lambda": "^1.0.7",
+    "esbuild": "^0.15.16",
+    "serverless": "^3.25.0",
+    "serverless-offline": "^11.6.0"
+  }
+}
