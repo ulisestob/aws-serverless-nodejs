@@ -1,11 +1,11 @@
-export const successResponse = (data) => {
+module.exports.successResponse = (data) => {
   return {
     statusCode: 200,
     body: JSON.stringify(data),
   }
 }
 
-export const errorResponse = (data) => {
+module.exports.errorResponse = (data) => {
   return {
     statusCode: 500,
     body: JSON.stringify(data),

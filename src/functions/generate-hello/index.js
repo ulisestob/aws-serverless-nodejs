@@ -1,10 +1,10 @@
-import { Chance } from 'chance';
+const Chance = require('chance');
 
-import { successResponse, errorResponse } from '../../shared/utils/reponses.util.js'
+const { successResponse, errorResponse } = require('../../shared/utils/reponses.util');
 
 const chance = new Chance()
 
-export const handler = async (event) => {
+module.exports.handler = async (event) => {
     try {
         return successResponse({
             message: 'generate: hello',

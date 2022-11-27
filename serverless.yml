@@ -13,6 +13,7 @@ functions:
       individually: true
       patterns:
         - "!**"
+        - "node_modules/**"
         - "src/shared/**"
         - "src/functions/generate-hello/**"
     events:
@@ -21,11 +22,12 @@ functions:
           method: get
   
   generate-world:
-    handler: src/functions/generate-world/handler.run
+    handler: src/functions/generate-world/index.handler
     package:
       individually: true
       patterns:
         - "!**"
+        - "node_modules/**"
         - "src/shared/**"
         - "src/functions/generate-world/**"
     events:
@@ -35,3 +37,4 @@ functions:
 
 plugins:
   - serverless-offline
+  - serverless-plugin-include-dependencies

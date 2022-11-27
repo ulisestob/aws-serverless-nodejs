@@ -4,14 +4,17 @@
   "description": "Example of aws-serverless-nodejs",
   "author": "",
   "license": "MIT",
-  "type": "module",
   "scripts": {
     "deploy": "serverless deploy"
+  },
+  "dependencies": {
+    "chance": "^1.1.9"
   },
   "devDependencies": {
     "aws-lambda": "^1.0.7",
     "esbuild": "^0.15.16",
     "serverless": "^3.25.0",
-    "serverless-offline": "^11.6.0"
+    "serverless-offline": "^11.6.0",
+    "serverless-plugin-include-dependencies": "^5.0.0"
   }
 }
